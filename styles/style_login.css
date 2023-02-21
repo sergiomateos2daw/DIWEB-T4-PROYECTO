@@ -1,0 +1,73 @@
+h3{
+  color: rgb(160, 160, 160);
+}
+
+.contenedor{
+  margin: 10px;
+}
+
+@media screen and (max-width: 422px) {
+  p{
+      font-size: 10px;
+      color: blue;
+  }
+}
+
+
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+input[type="email"], input[type="password"] {
+  animation: input-entrada 1.5s ;
+}
+
+@keyframes input-entrada {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+input[type="button"]:hover {
+  opacity: 0;
+  transform: translateX(500px);
+  transition: all 3s;
+}
+
+input[type="checkbox"]:checked {
+  width: 30px;
+  height: 30px;
+}
+
